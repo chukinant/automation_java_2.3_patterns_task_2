@@ -2,6 +2,7 @@ package ru.netology.testing_data_API;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -19,7 +20,6 @@ class AuthTest {
     SelenideElement loginField = $x("//*[@data-test-id='login']//input");
     SelenideElement passwordField = $x("//*[@data-test-id='password']//input");
     SelenideElement submitButton = $x("//button[@data-test-id='action-login']");
-
 
     @BeforeEach
     void setup() {
